@@ -10,7 +10,7 @@ import javax.ejb.Local;
 
 /**
  *
- * @author duglar
+ * @author Jennifer
  */
 
 @Local
