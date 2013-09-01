@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="./../../Plantillas/PlantillaPrincipal.xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core">
+
+    <ui:define name="titulo">
+        Gestion De Roles
+    </ui:define>
+    
+    <ui:define name="abajo">
+        
+    </ui:define>
+
+    <ui:define name="cuerpo">
+        
+        <h:form id="accionagregarRol">            
+            <p:commandButton value="Agregar Rol" actionListener="#{agregarRolBean.cargarGuardado()}"  />             
+        </h:form>
+        
+        <h:form id="frmroles">        
+            <p:dataTable id="tblroles" var="rol" value="#{gestionarRolBean.roles}" emptyMessage="No hay roles disponibles"
+                         paginator="true" rows="10" paginatorPosition="bottom" paginatorTemplate="{CurrentPageReport} {FirstPageLink} 
+                         {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} " 
+                         style="width: 100%">
+                <f:facet name="header">  
+                   Lista de Roles 
+                </f:facet> 
+                <p:column headerText="Codigo Rol" style="text-align: center" >                      
+                    <h:outputText value="#{rol.secrol}" />  
+                </p:column>
+                <p:column headerText="Descripcion" style="text-align: center" >  
+                    <h:outputText value="#{rol.descripcion}"  />  
+                </p:column>
+                          
+                
+                <f:facet name="footer" >  
+                    En total hay #{gestionarRolBean.totalRoles()} roles.  
+                 </f:facet>
+           </p:dataTable>      
+        </h:form>
+        
+      
+        
+        
+    </ui:define>
+
+    
+    
+    
+</ui:composition>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        Tienda El Trinfo - 
+        <ui:insert name="titulo">
+            
+        </ui:insert>
+        <style type="text/css">
+            .ui-widget {
+                font-size: 70%;
+            }
+            .ui-widget .ui-widget {
+                font-size: 97%;
+            }
+            
+                     
+            
+        </style>
+    </h:head>
+
+    <h:body>
+        
+        <h:form id="agregarRol">
+            <ui:include src="../Paginas/Rol/FrmAgregarRol.xhtml" />           
+        </h:form>
+        
+        
+        <p:layout fullPage="true" >
+
+         
+             <p:layoutUnit position="north" size="15%" >
+                 
+                 <h:form>
+
+                    <p:menubar autoDisplay="false">
+                        <p:submenu label="Acceso" icon="ui-icon-document">
+                            <p:submenu label="Roles" icon="ui-icon-contact">
+                                <p:menuitem value="Gestion De Roles" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
+                                <p:menuitem value="Listar Roles"  />
+                            </p:submenu> 
+                            <p:submenu label="Usuario" icon="ui-icon-contact">
+                                <p:menuitem value="Gestion De Usuarios" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
+                                <p:menuitem value="Listar Usuarios"  />
+                            </p:submenu>  
+
+                        </p:submenu>
+                        <p:submenu label="Usuario" icon="ui-icon-document">
+                            <p:submenu label="Roles" icon="ui-icon-contact">
+                                <p:menuitem value="Gestion De Roles" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
+                                <p:menuitem value="Listar Roles"  />
+                            </p:submenu> 
+                            <p:submenu label="Usuario" icon="ui-icon-contact">
+                                <p:menuitem value="Gestion De Usuarios" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
+                                <p:menuitem value="Listar Usuarios"  />
+                            </p:submenu>  
+
+                        </p:submenu>
+                        
+                        
+                    </p:menubar>
+
+                </h:form>
+                
+                    <ui:insert name="arriba">
+
+
+                    </ui:insert>
+               
+                
+            </p:layoutUnit>
+
+            <p:layoutUnit id="bottom" position="south" size="10%" >
+                
+                <p:messages id="messagesnuevo" showDetail="true" autoUpdate="true" closable="true" />    
+                
+                    <ui:insert name="abajo">
+
+
+                    </ui:insert>
+               
+                
+            </p:layoutUnit>
+
+           
+                      
+
+        
+
+            <p:layoutUnit  position="center">
+                
+                <ui:insert name="cuerpo" >
+                    <!-- AQUI IRA TODO LO DEL CUERPO DE LA PAGINA -->  
+                </ui:insert>
+                
+            </p:layoutUnit>
+
+        </p:layout>
+
+    </h:body>
+
+</html>

@@ -4,7 +4,7 @@
  */
 package com.triunfo.daoimpl;
 
-import com.triunfa.hibernate.HibernateUtil;
+import com.triunfo.hibernate.HibernateUtil;
 import com.triunfo.entidades.Tblmarca;
 import com.triunfo.dao.MarcaDAO;
 import java.util.ArrayList;

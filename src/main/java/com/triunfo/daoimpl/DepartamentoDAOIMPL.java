@@ -4,7 +4,7 @@
  */
 package com.triunfo.daoimpl;
 
-import com.triunfa.hibernate.HibernateUtil;
+import com.triunfo.hibernate.HibernateUtil;
 import com.triunfo.entidades.Tbldepartamento;
 import com.triunfo.dao.DepartamentoDAO;
 import java.util.ArrayList;
