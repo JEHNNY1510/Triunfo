@@ -27,6 +27,11 @@
             <to-view-id>/Paginas/Rol/GestionRoles.xhtml</to-view-id>
         </navigation-case>
         
+         <navigation-case>
+            <from-action>#{navegacionBean.ir_a_Gestion_Categorias()}</from-action> 
+            <from-outcome>GestionCategorias</from-outcome>
+            <to-view-id>/Paginas/Articulos/GestionarCategorias.xhtml</to-view-id>
+        </navigation-case>
         
         
     </navigation-rule>

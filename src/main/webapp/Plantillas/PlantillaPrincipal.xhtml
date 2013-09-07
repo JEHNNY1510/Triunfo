@@ -29,6 +29,9 @@
             <ui:include src="../Paginas/Rol/FrmAgregarRol.xhtml" />           
         </h:form>
         
+         <h:form id="agregarCategoria">
+            <ui:include src="../Paginas/Articulos/FrmAgregarCategoria.xhtml" />           
+        </h:form>
         
         <p:layout fullPage="true" >
 
@@ -54,10 +57,19 @@
                                 <p:menuitem value="Gestion De Roles" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
                                 <p:menuitem value="Listar Roles"  />
                             </p:submenu> 
-                            <p:submenu label="Usuario" icon="ui-icon-contact">
-                                <p:menuitem value="Gestion De Usuarios" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
-                                <p:menuitem value="Listar Usuarios"  />
-                            </p:submenu>  
+                          
+
+                        </p:submenu>
+                        <p:submenu label="Articulos" icon="ui-icon-document">
+                            <p:submenu label="Productos" icon="ui-icon-contact">
+                                <p:menuitem value="Gestion De Productos" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
+                              
+                            </p:submenu> 
+                          <p:submenu label="Categorias" icon="ui-icon-contact">
+                                <p:menuitem value="Gestion De Categorias" action="#{navegacionBean.ir_a_Gestion_Categorias()}"  />
+                              
+                            </p:submenu> 
+                          
 
                         </p:submenu>
                         

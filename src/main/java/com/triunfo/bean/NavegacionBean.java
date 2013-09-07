@@ -22,7 +22,9 @@ public class NavegacionBean implements Serializable {
        return "GestionRoles";
    }
     
-    
+    public String ir_a_Gestion_Categorias(){
+       return "GestionCategorias"; 
+    }
     
     public NavegacionBean() {
     }

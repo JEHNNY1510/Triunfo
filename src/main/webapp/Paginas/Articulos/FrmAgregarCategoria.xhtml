@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+   
+    <ui:composition>
+        
+        <p:dialog id="dlgagregarCategoria" visible="#{agregarCategoriaBean.abrirNuevaCategoria}" width="30%" height="40%" 
+                      header="Agregar Categorias" showEffect="explode" 
+                      hideEffect="explode"
+                      modal="true" maximizable="false" resizable="false"
+                      style="text-align: center;width: 100%"
+                      closable="false">
+            
+                <h:panelGrid columns="2" cellpadding="1" cellspacing="10%" style="text-align: center;width: 100%">
+                    <p:outputLabel value="Descripción Categoria" style="width: 100%"/>
+                    <p:inputText value="#{agregarCategoriaBean.categoria.nombrecategoria}" id="txtdescripcioncategoria" style="width: 100%"/>
+                    
+                </h:panelGrid>
+                <h:panelGrid columns="2" cellpadding="1" cellspacing="10%">
+                    <p:commandButton value="Guardar" actionListener="#{agregarCategoriaBean.guardarCategoria()}" />
+                    <p:commandButton value="Cancelar" actionListener="#{agregarCategoriaBean.cerrarNuevaCategoria()}"/>
+                </h:panelGrid>        
+                
+            
+                </p:dialog>
+        
+    </ui:composition>
+</html>
