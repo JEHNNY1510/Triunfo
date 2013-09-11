@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <ui:composition>
+
+        <p:dialog id="dlgagregardetalleventa" visible="#{agregarDetalleVentaBean.abrirGuardado}" width="30%" height="40%" 
+                      header="Agregar Detalle Venta" showEffect="explode" 
+                      hideEffect="explode"
+                      onHide="#{agregarDetalleVentaBean.cerrarGuardado()}" minimizable="true" 
+                      modal="true" maximizable="false" resizable="false"
+                      style="text-align: center;width: 100%">
+               <h:panelGrid columns="2" cellpadding="1" cellspacing="10%" style="text-align: center;width: 100%">
+                <p:outputLabel value="Producto" style="width: 100%"/>
+                <p:inputText value="#{agregarDetalleVentaBean.detallev.tblproducto}" id="txtproducto" style="width: 100%"/>
+
+                <p:outputLabel value="Venta" style="width: 100%"/>
+                <p:inputText value="#{agregarDetalleVentaBean.detallev.tblventa}" id="txtventa" style="width: 100%"/>
+
+                <p:outputLabel value="Subtotal" style="width: 100%"/>
+                <p:inputText value="#{agregarDetalleVentaBean.detallev.subtotal}" id="txtsubtotal" style="width: 100%"/>
+
+             </h:panelGrid>        
+                 <h:panelGrid columns="2" cellpadding="1" cellspacing="10%">
+                     <p:commandButton value="Guardar" actionListener="#{agregarDetalleVentaBean.guardarDetalleVenta()}" />
+                     <p:commandButton value="Cancelar" actionListener="#{agregarDetalleVentaBean.cerrarGuardado()}"/>
+                </h:panelGrid>    
+                
+            </p:dialog>
+    </ui:composition>
+</html>

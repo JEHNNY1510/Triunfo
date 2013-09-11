@@ -15,7 +15,7 @@
                 font-size: 70%;
             }
             .ui-widget .ui-widget {
-                font-size: 97%;
+                font-size: 100%;
             }
             
                      
@@ -33,51 +33,76 @@
             <ui:include src="../Paginas/Articulos/FrmAgregarCategoria.xhtml" />           
         </h:form>
         
+         <h:form id="agregarUnidad">
+            <ui:include src="../Paginas/Unidad/FrmAgregarUnidad.xhtml" />           
+        </h:form>
+        
+         <h:form id="agregarTipoPersona">
+            <ui:include src="../Paginas/TipoPersona/FrmAgregarTipoPersona.xhtml" />           
+        </h:form>
+        
+         <h:form id="agregarDetalleVenta">
+            <ui:include src="../Paginas/DetalleVenta/FrmAgregarDetalleVenta.xhtml" />           
+        </h:form>
         <p:layout fullPage="true" >
 
          
-             <p:layoutUnit position="north" size="15%" >
-                 
+             <p:layoutUnit position="north" size="25%" >
+
                  <h:form>
 
-                    <p:menubar autoDisplay="false">
-                        <p:submenu label="Acceso" icon="ui-icon-document">
-                            <p:submenu label="Roles" icon="ui-icon-contact">
-                                <p:menuitem value="Gestion De Roles" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
-                                <p:menuitem value="Listar Roles"  />
-                            </p:submenu> 
-                            <p:submenu label="Usuario" icon="ui-icon-contact">
-                                <p:menuitem value="Gestion De Usuarios" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
-                                <p:menuitem value="Listar Usuarios"  />
-                            </p:submenu>  
+                     <p:menubar autoDisplay="false">
+                         <p:submenu label="Acceso" icon="ui-icon-document">
+                             <p:submenu label="Roles" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion De Roles" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
+                                 <p:menuitem value="Listar Roles"  />
+                             </p:submenu> 
 
-                        </p:submenu>
-                        <p:submenu label="Usuario" icon="ui-icon-document">
-                            <p:submenu label="Roles" icon="ui-icon-contact">
-                                <p:menuitem value="Gestion De Roles" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
-                                <p:menuitem value="Listar Roles"  />
-                            </p:submenu> 
-                          
 
-                        </p:submenu>
-                        <p:submenu label="Articulos" icon="ui-icon-document">
-                            <p:submenu label="Productos" icon="ui-icon-contact">
-                                <p:menuitem value="Gestion De Productos" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
-                              
-                            </p:submenu> 
-                          <p:submenu label="Categorias" icon="ui-icon-contact">
-                                <p:menuitem value="Gestion De Categorias" action="#{navegacionBean.ir_a_Gestion_Categorias()}"  />
-                              
-                            </p:submenu> 
-                          
+                         </p:submenu>
 
-                        </p:submenu>
-                        
-                        
-                    </p:menubar>
+                         <p:submenu label="Articulos" icon="ui-icon-document">
+                             <p:submenu label="Productos" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion De Productos" action="#{navegacionBean.ir_a_Gestion_Roles()}"  />
 
-                </h:form>
-                
+                             </p:submenu> 
+                             <p:submenu label="Categorias" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion De Categorias" action="#{navegacionBean.ir_a_Gestion_Categorias()}"  />
+
+                             </p:submenu> 
+                             <p:submenu label="Unidad" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion De unidad" action="#{navegacionBean.ir_a_Gestion_Unidad()}"  />
+
+                             </p:submenu> 
+
+
+                         </p:submenu>
+
+
+                         <p:submenu label="Usuario" icon="ui-icon-document">
+                             <p:submenu label="Tipo Persona" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion De Persona" action="#{navegacionBean.ir_a_Gestion_TipoPersona()}"  />
+
+                             </p:submenu> 
+
+
+                         </p:submenu>
+                         <p:submenu label="Compra" icon="ui-icon-document">
+                             <p:submenu label="Detalle Compra" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion Detalle Compra" action="#{navegacionBean.ir_a_Gestion_TipoPersona()}"  />
+                             </p:submenu> 
+                             <p:submenu label="Detalle Venta" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion Detalle Venta" action="#{navegacionBean.ir_a_Gestion_DetalleVenta()}"  />
+
+                             </p:submenu> 
+
+
+                         </p:submenu>
+
+                     </p:menubar>
+
+                 </h:form>
+
                     <ui:insert name="arriba">
 
 
