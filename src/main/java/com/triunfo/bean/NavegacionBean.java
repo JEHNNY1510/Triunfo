@@ -38,6 +38,13 @@ public class NavegacionBean implements Serializable {
         public String ir_a_Gestion_DetalleVenta(){
         return "GestionarDetalleVenta";
     }
+         public String ir_a_Gestion_Marca(){
+        return "GestionarMarca";
+    }
+          public String ir_a_Gestion_PrecioCompra(){
+        return "GestionarPrecioCompra";
+    }
+        
     public NavegacionBean() {
     }
 }

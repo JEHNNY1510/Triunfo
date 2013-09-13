@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <ui:composition>
+        
+        <p:dialog id="dlgagregarPrecioCompra" visible="#{agregarPrecioCompraBean.abrirGuardado}" width="30%" height="40%" 
+                      header="Agregar Precio Compra" showEffect="explode" 
+                      hideEffect="explode"
+                      onHide="#{agregarPrecioCompraBean.cerrarGuardado()}" minimizable="true" 
+                      modal="true" maximizable="false" resizable="false"
+                      style="text-align: center;width: 100%">
+                <h:panelGrid columns="2" cellpadding="1" cellspacing="10%" style="text-align: center;width: 100%">
+                    <p:outputLabel value=" fecha Compra" style="width: 100%"/>
+                    <p:inputText value="#{agregarPrecioCompraBean.precioc.fecha}" id="txtdescripcionfecha" style="width: 100%"/>
+                    
+                    <p:outputLabel value=" Precio Compra" style="width: 100%"/>
+                    <p:inputText value="#{agregarPrecioCompraBean.precioc.precio}" id="txtdescripcionprecio" style="width: 100%"/>
+                    
+                </h:panelGrid>
+                <h:panelGrid columns="2" cellpadding="1" cellspacing="10%">
+                    <p:commandButton value="Guardar" actionListener="#{agregarPrecioCompraBean.guardarPrecioCompra()}" />
+                    <p:commandButton value="Cancelar" actionListener="#{agregarPrecioCompraBean.cerrarGuardado()}"/>
+                </h:panelGrid>        
+                
+                
+            </p:dialog>
+    </ui:composition>
+</html>

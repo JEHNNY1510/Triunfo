@@ -44,6 +44,13 @@
          <h:form id="agregarDetalleVenta">
             <ui:include src="../Paginas/DetalleVenta/FrmAgregarDetalleVenta.xhtml" />           
         </h:form>
+          <h:form id="agregarMarca">
+            <ui:include src="../Paginas/Marca/FrmAgregarMarca.xhtml" />           
+        </h:form>
+        
+        <h:form id="agregarPrecioCompra">
+            <ui:include src="../Paginas/PrecioCompra/FrmAgregarPrecioCompra.xhtml" />           
+        </h:form>
         <p:layout fullPage="true" >
 
          
@@ -74,6 +81,10 @@
                                  <p:menuitem value="Gestion De unidad" action="#{navegacionBean.ir_a_Gestion_Unidad()}"  />
 
                              </p:submenu> 
+                             <p:submenu label="Marca" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestion De la Marca Producto" action="#{navegacionBean.ir_a_Gestion_Marca()}"  />
+
+                             </p:submenu>
 
 
                          </p:submenu>
@@ -93,6 +104,10 @@
                              </p:submenu> 
                              <p:submenu label="Detalle Venta" icon="ui-icon-contact">
                                  <p:menuitem value="Gestion Detalle Venta" action="#{navegacionBean.ir_a_Gestion_DetalleVenta()}"  />
+
+                             </p:submenu> 
+                              <p:submenu label="Precio Compra" icon="ui-icon-contact">
+                                 <p:menuitem value="Gestionar Precio Compra" action="#{navegacionBean.ir_a_Gestion_PrecioCompra()}"  />
 
                              </p:submenu> 
 

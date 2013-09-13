@@ -58,6 +58,17 @@
             <to-view-id>/Paginas/DetalleVenta/GestionarDetalleVenta.xhtml</to-view-id>
         </navigation-case>
         
+           <navigation-case>
+            <from-action>#{navegacionBean.ir_a_Gestion_Marca()}</from-action> 
+            <from-outcome>GestionarMarca</from-outcome>
+            <to-view-id>/Paginas/Marca/GestionarMarca.xhtml</to-view-id>
+        </navigation-case>
+        
+          <navigation-case>
+            <from-action>#{navegacionBean.ir_a_Gestion_PrecioCompra()}</from-action> 
+            <from-outcome>GestionarPrecioCompra</from-outcome>
+            <to-view-id>/Paginas/PrecioCompra/GestionarPrecioCompra.xhtml</to-view-id>
+        </navigation-case>
         
         
         
