@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scene Scope="Project" version="2">
     <Scope Scope="Faces Configuration Only"/>
-    <Scope Scope="Project"/>
+    <Scope Scope="Project">
+        <Node id="Paginas/Unidad/GestionUnidad.xhtml" x="1150" y="300" zoom="true"/>
+        <Node id="Paginas/TipoPersona/GestionarTipoPersona.xhtml" x="400" y="750" zoom="true"/>
+        <Node id="Paginas/Unidad/FrmAgregarUnidad.xhtml" x="1150" y="150" zoom="true"/>
+        <Node id="Paginas/DetalleVenta/GestionarDetalleVenta.xhtml" x="1400" y="150" zoom="true"/>
+        <Node id="*" x="150" y="450" zoom="true"/>
+        <Node id="Paginas/Menus/MenuAdministrador.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="Paginas/PrecioCompra/GestionarPrecioCompra.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="Paginas/DetalleVenta/FrmAgregarDetalleVenta.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="Paginas/Rol/FrmAgregarRol.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="Paginas/Marca/GestionarMarca.xhtml" x="650" y="450" zoom="true"/>
+        <Node id="Paginas/Articulos/GestionarCategorias.xhtml" x="900" y="450" zoom="true"/>
+        <Node id="Paginas/DetalleCompra/GestionarDetalleCompra.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="Paginas/Rol/GestionRoles.xhtml" x="900" y="300" zoom="true"/>
+        <Node id="index.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="Plantillas/PlantillaPrincipal.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="Paginas/PrecioCompra/FrmAgregarPrecioCompra.xhtml" x="650" y="600" zoom="true"/>
+        <Node id="Paginas/Marca/FrmAgregarMarca.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="Paginas/TipoPersona/FrmAgregarTipoPersona.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="Paginas/DetalleCompra/FrmAgregarDetalleCompra.xhtml" x="150" y="750" zoom="true"/>
+        <Node id="Paginas/Articulos/FrmAgregarCategoria.xhtml" x="400" y="600" zoom="true"/>
+    </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>
